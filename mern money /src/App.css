@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #17181f;
+  color: #ddd;
+}
+
+main {
+  max-width: 360px;
+  margin: 50px auto;
+}
+
+h1, .center {
+  text-align: center;
+  color: #fff;
+}
+
+form {
+  margin-top: 20px;
+}
+
+form input {
+  background-color: transparent;
+  color: #ddd;
+  width: 100%;
+  border: 2px solid #30313d;
+  padding: 2px 5px;
+  border-radius: 5px;
+}
+
+form input.datetime {
+  color: #777;
+}
+
+form button {
+  width: 100%;
+  margin-top: 5px;
+  border: 0;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: #ddd;
+  color: black
+}
+
+form button:hover {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+form div.basic {
+  display: flex;
+  gap: 5px;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+form div.description {
+  display: flex;
+}
+
+div.transactions {
+  margin-top: 10px;
+}
+
+div.transaction {
+  border-top: 1px solid #30313d;
+  display: flex;
+  padding: 5px 0;
+  justify-content: space-between;
+}
+div.transaction:hover{
+  /*border:5px solid #30313d;
+  margin: 15px;
+  padding:15px;*/
+  cursor: pointer;
+}
+div.transaction:first-child {
+  border-top: 0;
+}
+
+div.transaction div.name {
+  font-size: 1rem;
+}
+
+div.transaction div.decsription {
+  font-size: .7rem;
+  color: #888;
+}
+
+div.right {
+  text-align: right
+}
+
+div.price.green {
+  color: #1c1;
+}
+
+div.price.red {
+  color: hsl(0, 85%, 43%);
+}
